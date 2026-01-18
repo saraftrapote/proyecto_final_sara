@@ -266,7 +266,7 @@ body {
     position: relative;
 
     /* Imagen por defecto (Noticias) */
-    background-image: url(/assets/Noticias_cabecera.webp);
+    background-image: url(../assets/Noticias_cabecera.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -341,7 +341,7 @@ body {
 .Themes--reverse .Themes-wrapper {
     /* background-color: aliceblue; */
     align-items: end;
-    background-image: url(/assets/celebracion_waterpolo.avif);
+    background-image: url(../assets/celebracion_waterpolo.avif);
 }
 /* Texto dentro del contenedor con imagen de fondo para la variante reverse */
 .Themes--reverse .Themes-tx {
@@ -351,7 +351,7 @@ body {
 
 /* Contenedor con imagen de fondo para la variante challenge */
 .Themes--challenge {
-    background-image: url(/assets/maria-perez-en-tokio-2326044366.jpeg);
+    background-image: url(../assets/maria-perez-en-tokio-2326044366.jpeg);
 }
 
 
