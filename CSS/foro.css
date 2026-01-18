@@ -1,0 +1,418 @@
+/* Copie el reset del post de la clase*/
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+.Sports {
+
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    font-family: Montserrat, sans-serif;
+    padding: 1.25rem;
+    gap: 20px;
+    border-radius: .625rem;
+
+    /* background-color: aqua; */
+}
+
+.Sports-title {
+    width: 100%;
+    min-height: 4.375rem;
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.Title-svg {
+    color: #EAD196;
+    border-radius: 50%;
+    ;
+
+    padding: .625rem;
+}
+
+.Title-h2 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: #EAD196;
+    font-weight: 700;
+}
+
+.Sports-marquee {
+    width: 400%;
+    /* background-color: lightgray; */
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+
+    gap: .3125rem;
+    animation: Marquee 40s linear infinite both;
+    border-radius: .625rem;
+
+}
+
+.Sports-mark {
+    min-height: 200px;
+    background: linear-gradient(145deg, #BF3131, #7c1711);
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: .3125rem;
+
+    border: solid 2px #7c1711;
+    border-radius: .625rem;
+}
+
+.Sports-svg {
+    background-color: #EAD196;
+    color: #7c1711;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 2px #7c1711;
+
+    padding: .625rem;
+
+
+
+}
+
+.Sports-h3 {
+    /* background-color: lightskyblue; */
+    color: #EAD196;
+    font-family: Lato, sans-serif;
+    font-size: 1.125rem;
+}
+
+
+
+
+
+.Forum {
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: lightgray; */
+    padding: 1rem;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: Montserrat, sans-serif;
+}
+
+.Accordion-comment {
+    background: linear-gradient(145deg, #fcfaf3, #eeeeee);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: solid 2px #BF3131;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+
+    cursor: pointer;
+}
+
+
+.Comment-content {
+    /* background-color: lightgray; */
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: .5rem;
+
+}
+
+/* accordeon-p */
+.Comment-text {
+    /* background-color: lightgoldenrodyellow; */
+    height: 0px;
+    overflow: hidden;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Comment-content.isVisible .Comment-text {
+    height: 70px;
+    overflow: visible;
+    margin-bottom: 1rem;
+    animation: SwipeIn .5s ease-in-out;
+}
+
+/* accordeon-btn */
+.Comment-username {
+    /* background-color: lightblue; */
+    font-weight: 700;
+    font-family: Lato, sans-serif;
+    color: #BF3131;
+
+}
+
+.Comment-h4 {
+    /* background-color: lightcoral; */
+    font-weight: 500;
+    font-size: 1.125rem;
+
+}
+
+/* perfil */
+
+.Comment-profile {
+    /* background-color: lightpink; */
+    height: 0px;
+    overflow: hidden;
+}
+
+.Comment-profile.isVisible {
+    height: 100px;
+    width: 20rem;
+    overflow: visible;
+    margin-bottom: 1rem;
+    animation: SwipeIn .5s ease-in-out;
+    animation: FloatUp .5s ease-in-out;
+
+}
+
+.Comment-img {
+
+    width: 200px;
+    border-radius: 50%;
+    border: solid 2px #BF3131;
+
+}
+
+
+/* compartir */
+.Comment-interaction {
+    /* background-color: lightyellow; */
+    height: 0px;
+    overflow: hidden;
+    color: rgb(126, 125, 125);
+
+}
+
+.Comment-interaction.isVisible {
+    height: 80px;
+    overflow: visible;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    font-size: .800rem;
+    padding: .625rem;
+    border: solid 1px rgb(126, 125, 125);
+}
+
+/* Keyframes animaciones */
+
+@keyframes Marquee {
+    from {
+        translate: 0%;
+    }
+
+    to {
+        translate: -50%;
+    }
+}
+
+@keyframes SwipeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+    .Sports-marquee {
+        width: 600%;
+    }
+
+    .Title-h2 {
+        font-size: 1.125rem;
+
+
+    }
+
+    .Comment-content.isVisible .Comment-text {
+        height: 100px;
+        
+    }
+
+
+}
+
+@media (max-width: 950px) {
+    .Sports-marquee {
+        width: 800%;
+    }
+
+    .Title-h2 {
+        font-size: 1rem;
+    }
+    .Comment-text {
+        font-size: .75rem;
+    }
+    .Comment-h4 {
+    font-size: 1rem;
+
+}
+
+}
+
+@media (max-width: 600px) {
+     .Accordion-comment {
+       width: 18.75rem;
+       display: flex;
+         flex-flow: column nowrap;
+            align-items: center;
+    }
+
+    .Comment-profile.isVisible {
+        width: 100px;
+    }
+    .Comment-content{
+        align-items: center;
+        text-align: center;
+    }
+    .Sports-marquee {
+        width: 1200%;
+    }
+
+    .Title-h2 {
+        font-size: .875rem;
+    }
+
+    .Sports-h3 {
+        font-size: 1rem;
+    }
+
+    .Comment-h4 {
+    font-size: .875rem;
+
+}
+  .Comment-interaction.isVisible {
+        width: 12.5rem;
+        font-size: .75rem;
+        
+    }
+}

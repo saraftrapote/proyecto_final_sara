@@ -1,0 +1,436 @@
+/* Copie el reset del post de la clase*/
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+body {
+    background-color: #7c1711;
+}
+
+.Main {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Página de carga */
+
+.Preload {
+    width: 100%;
+    min-height: 100%;
+    background-color: #EAD196;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    animation: SwipeUp 2s ease 1 2s both;
+    transform-origin: top;
+
+}
+
+.Preload-svg {
+    width: 90%;
+    max-width: 6.25rem;
+    /* background-color: aliceblue; */
+    fill: #7c1711;
+
+}
+.Preload-span {
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #7c1711;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: Lato, sans-serif;
+
+    position: relative; /* necesario para el pseudo-elemento */
+}
+
+/* pseudo-elemento que mostrará los puntos animados */
+.Preload-span::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.5rem;
+    /* tamaño visual del área de puntos */
+    min-width: 1.5rem;
+    text-align: left;
+    animation: loadingDots 2s steps(3,end) infinite;
+}
+
+/*  El svg sin anidar */
+.Preload-svg .cls-1,
+.Preload-svg .cls-2,
+.Preload-svg .cls-3,
+.Preload-svg .cls-4,
+.Preload-svg .cls-5,
+.Preload-svg .cls-6,
+.Preload-svg .cls-7,
+.Preload-svg .cls-8 {
+    fill: none;
+}
+
+.Preload-svg .cls-2 {
+    stroke-width: 5.86px;
+}
+
+.Preload-svg .cls-2,
+.Preload-svg .cls-3,
+.Preload-svg .cls-4,
+.Preload-svg .cls-5,
+.Preload-svg .cls-6,
+.Preload-svg .cls-7,
+.Preload-svg .cls-8 {
+    stroke: #7c1711;
+}
+
+.Preload-svg .cls-3 {
+    stroke-width: 11.44px;
+}
+
+.Preload-svg .cls-4 {
+    stroke-width: 5.72px;
+}
+
+.Preload-svg .cls-5 {
+    stroke-width: 15px;
+}
+
+.Preload-svg .cls-6 {
+    stroke-width: 11.73px;
+}
+
+.Preload-svg .cls-7 {
+    stroke-width: 11px;
+}
+
+.Preload-svg .cls-8 {
+    stroke-width: 17px;
+}
+
+.Preload-svg .cls-9 {
+    clip-path: url(#clippath-1);
+}
+
+.Preload-svg .cls-10 {
+    clip-path: url(#clippath);
+}
+
+
+/* Home page con el logo */
+
+.Home {
+    min-height: 100vh;
+
+    margin: auto;
+}
+
+.Home-wrapper {
+    /* background-color: aliceblue; */
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.25rem;
+}
+
+.Home-logo {
+    width: 700px;
+    /* background-color: aquamarine; */
+
+    animation: LogoBounce 2s infinite;
+}
+
+.Home-svg {
+    max-width: 37.5rem;
+
+}
+
+.Themes {
+
+    background-color: #EAD196;
+
+    margin: auto;
+}
+
+.Themes-wrapper {
+
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #c56964; */
+
+    padding: 1.875rem;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: baseline;
+
+    position: relative;
+    background-image: url(/assets/Noticias_cabecera.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.Themes-filter {
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.Themes-tx {
+    /* background-color: aliceblue; */
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: baseline;
+
+    position: absolute;
+    gap: .625rem;
+    padding: 1.875rem;
+
+    color: beige;
+}
+
+.Themes-h2 {
+    /* background-color: antiquewhite; */
+    font-size: 3.125rem;
+    font-weight: 600;
+
+
+}
+
+.Themes-h3 {
+    /* background-color: beige; */
+    font-size: 1.5625rem;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+.Themes-btn {
+
+    border-radius: 1.25rem;
+    background: linear-gradient(145deg, #851912, #70150f);
+    box-shadow: .3125rem .3125rem 0.625rem rgba(0, 0, 0, 0.574),
+        -0.05rem -0.05rem .3rem #63120c;
+    font-family: "Lato", sans-serif;
+
+    color: beige;
+    padding: 1.25rem 2.5rem;
+}
+
+.Themes-btn:hover {
+    box-shadow: inset 1.25rem 1.25rem 3.75rem #5f120d,
+        inset -1.25rem -1.25rem 3.75rem #991c15;
+    color: #EAD196;
+}
+
+.Themes--reverse .Themes-wrapper {
+    /* background-color: aliceblue; */
+    align-items: end;
+    background-image: url(/assets/celebracion_waterpolo.avif);
+}
+
+.Themes--reverse .Themes-tx {
+    align-items: end;
+    text-align: end;
+}
+
+.Themes--challenge {
+    background-image: url(/assets/maria-perez-en-tokio-2326044366.jpeg);
+}
+
+
+
+
+
+@keyframes SwipeUp {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes LogoBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingDots {
+    0%,
+    20% {
+        content: "Loading";
+    }
+    40% {
+        content: "Loading.";
+    }
+    60% {
+        content: "Loading..";
+    }
+    80%,
+    100% {
+        content: "Loading...";
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 588px) {
+
+    .Themes-h2 {
+        font-size: 2.5rem;
+    }
+
+    .Themes-h3 {
+        /* background-color: beige; */
+        font-size: 1.25rem;
+
+    }
+
+    .Footer-ul {
+        font-size: .9375rem;
+    }
+    .Themes-wrapper{
+    background-size: cover ;
+    background-attachment: scroll ;
+}
+}
+
+@media (max-width: 400px) {
+
+    .Themes-h2 {
+        font-size: 1.875rem;
+    }
+
+    .Themes-h3 {
+        /* background-color: beige; */
+        font-size: 1rem;
+
+    }
+
+    .Footer-ul {
+        font-size: .75rem;
+        gap: 10px;
+    }
+
+    .Footer-copy {
+        font-size: .625rem;
+    }
+}
+

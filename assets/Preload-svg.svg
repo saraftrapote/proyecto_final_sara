@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 362.39 344">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-width: 5.86px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke: #7c1711;
+      }
+
+      .cls-3 {
+        stroke-width: 11.44px;
+      }
+
+      .cls-4 {
+        stroke-width: 5.72px;
+      }
+
+      .cls-5 {
+        stroke-width: 15px;
+      }
+
+      .cls-6 {
+        stroke-width: 11.73px;
+      }
+
+      .cls-7 {
+        stroke-width: 11px;
+      }
+
+      .cls-8 {
+        stroke-width: 17px;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" y="0" width="362.39" height="344"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="0" y="0" width="362.39" height="344"/>
+    </clipPath>
+  </defs>
+  <g class="cls-10">
+    <ellipse class="cls-8" cx="181.19" cy="172" rx="172.69" ry="163.5"/>
+  </g>
+  <line class="cls-3" x1="71.2" y1="45.14" x2="160.08" y2="134.36"/>
+  <line class="cls-4" x1="61.09" y1="55.22" x2="149.96" y2="144.44"/>
+  <line class="cls-3" x1="50.97" y1="65.3" x2="139.85" y2="154.52"/>
+  <line class="cls-6" x1="310.1" y1="63.49" x2="227.06" y2="151.01"/>
+  <line class="cls-2" x1="299.48" y1="53.42" x2="216.44" y2="140.94"/>
+  <line class="cls-6" x1="288.86" y1="43.34" x2="205.82" y2="130.86"/>
+  <g class="cls-9">
+    <path class="cls-5" d="M183.22,250.54c28.17,0,51.01-23.59,51.01-52.69s-22.84-52.69-51.01-52.69-51.01,23.59-51.01,52.69,22.84,52.69,51.01,52.69Z"/>
+  </g>
+  <line class="cls-5" x1="181.55" y1="246.64" x2="181.55" y2="310.28"/>
+  <line class="cls-7" x1="201.19" y1="273.83" x2="161.3" y2="273.83"/>
+</svg>
