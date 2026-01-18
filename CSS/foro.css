@@ -103,6 +103,7 @@ label {
     /* background-color: aqua; */
 }
 
+ /* ================= SPORTS TITLE ================= */
 .Sports-title {
     width: 100%;
     min-height: 4.375rem;
@@ -130,6 +131,7 @@ label {
     font-weight: 700;
 }
 
+ /* ================= SPORTS MARQUESINA ================= */
 .Sports-marquee {
     width: 400%;
     /* background-color: lightgray; */
@@ -179,8 +181,7 @@ label {
 }
 
 
-
-
+    /* ================= FORO ================= */
 
 .Forum {
     max-width: 1200px;
@@ -226,7 +227,7 @@ label {
 
 }
 
-/* accordeon-p */
+/* contenido NO visible */
 .Comment-text {
     /* background-color: lightgoldenrodyellow; */
     height: 0px;
@@ -243,7 +244,7 @@ label {
     animation: SwipeIn .5s ease-in-out;
 }
 
-/* accordeon-btn */
+/* contenido visible */
 .Comment-username {
     /* background-color: lightblue; */
     font-weight: 700;
@@ -259,7 +260,7 @@ label {
 
 }
 
-/* perfil */
+/*  Contenido del perfil  */
 
 .Comment-profile {
     /* background-color: lightpink; */
@@ -277,6 +278,7 @@ label {
 
 }
 
+
 .Comment-img {
 
     width: 200px;
@@ -286,7 +288,7 @@ label {
 }
 
 
-/* compartir */
+/* contenido interaccion compartir */
 .Comment-interaction {
     /* background-color: lightyellow; */
     height: 0px;
@@ -309,6 +311,8 @@ label {
     padding: .625rem;
     border: solid 1px rgb(126, 125, 125);
 }
+
+
 
 /* Keyframes animaciones */
 
@@ -333,9 +337,6 @@ label {
         transform: translateY(0);
     }
 }
-
-
-
 
 
 

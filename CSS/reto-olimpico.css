@@ -87,6 +87,7 @@ body {
     background-color: #7c1711;
 }
 
+/* ===================================================== HERO ===================================================== */
 .Hero {
     /* background-color: blue; */
     max-width: 1200px;
@@ -220,7 +221,7 @@ body {
 
 
 
-/* SELECCION DE NIVELES */
+/* NIVELES DE DIFICULTAD */
 
 .Hero-levels {
     /* background-color: lightgray; */
@@ -268,7 +269,7 @@ body {
     color: #EAD196;
 }
 
-/* CARROUSEL DE EJERCICIOS */
+/* ===================================================== CARRUSEL ===================================================== */
 
 .Hero-carrousel {
     /* background-color: lightpink; */
@@ -342,7 +343,7 @@ body {
 }
 
 
-/* EJERCICIOS Y CHECKBOX */
+/* ===================================================== EJERCICIOS Y CHECKBOX ===================================================== */
 
 .Carrousel-exercise {
     background-color: #c5251d58;
@@ -390,6 +391,8 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
+
 
 /* EL CHECKBOX, UTILICÉ CÓDIGO DE UN MODELO Y LO ADAPTÉ PARA GENERAR UN CHECKBOX PERSONALIZADO */
 .checkmark {
@@ -448,7 +451,8 @@ body {
 
 
 
-/* ASIDE */
+/* ===================================================== ASIDE BAR ===================================================== */
+
 .Hero-aside {
     min-width: 13.75rem;
     max-height: 20rem;
@@ -470,7 +474,7 @@ body {
 
     
 }
-
+/* Barra de progreso */
 .Aside-bar {
     width: 100%;
     height: 0.75rem;
@@ -506,7 +510,7 @@ body {
     font-size: 1.0625rem;
 }
 
-/* controles semana */
+/* controles  por semana */
 .Aside-week {
     /* background-color: lightgreen; */
 
@@ -552,7 +556,9 @@ body {
 
 
 
-/* MEDIA QUERIES */
+/* ================================ MEDIA QUERIES ================================ */
+/* Desktop: diseño de dos columnas con aside fijo */
+/* mobile: diseño de una columna con aside estático */
 
 @media (min-width: 992px) {
     .Hero {
@@ -597,7 +603,6 @@ body {
     }
 
 
-    /* Carrusel: altura y espaciado más contenidos */
     .Levels-ul {
         padding: 0rem 2.5rem;
     }
@@ -607,7 +612,7 @@ body {
         gap: 0.5rem;
     }
 
-    /* Controles del carrusel más arriba y centrados */
+    
     .Carrousel-ul {
         bottom: 1.4rem;
         left: 50%;

@@ -1,4 +1,6 @@
-/* Copie el reset del post de la clase*/
+/* ===================================================== RESET Y CONFIGURACIÓN BASE =====================================================
+  Reset global para normalizar estilos entre navegadores. Basado en el reset visto en clase */
+
 :root {
     scroll-behavior: smooth;
     font-size: 100%;
@@ -92,7 +94,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* Página de carga */
+/* ===================================================== PRELOAD ===================================================== */
 
 .Preload {
     width: 100%;
@@ -107,11 +109,13 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+     /* Animación de salida */
     animation: SwipeUp 2s ease 1 2s both;
     transform-origin: top;
 
 }
-
+/* Logo del preload */
 .Preload-svg {
     width: 90%;
     max-width: 6.25rem;
@@ -119,6 +123,7 @@ body {
     fill: #7c1711;
 
 }
+/* Texto bajo el logo */
 .Preload-span {
     margin-top: 1.25rem;
     font-size: 1.25rem;
@@ -129,10 +134,10 @@ body {
     letter-spacing: 0.1em;
     font-family: Lato, sans-serif;
 
-    position: relative; /* necesario para el pseudo-elemento */
+    position: relative;
 }
 
-/* pseudo-elemento que mostrará los puntos animados */
+/* pseudo-elemento que mostrará los puntos animados, lo hice con ayuda de copilot */
 .Preload-span::after {
     content: "";
     display: inline-block;
@@ -140,7 +145,7 @@ body {
     /* tamaño visual del área de puntos */
     min-width: 1.5rem;
     text-align: left;
-    animation: loadingDots 2s steps(3,end) infinite;
+    animation: loadingDots 2s steps(3, end) infinite;
 }
 
 /*  El svg sin anidar */
@@ -202,7 +207,7 @@ body {
 }
 
 
-/* Home page con el logo */
+/* ===================================================== HOME ===================================================== */
 
 .Home {
     min-height: 100vh;
@@ -233,12 +238,16 @@ body {
 
 }
 
+/* ===================================================== SECCIONES THEMES (NOTICIAS / COMUNIDAD / RETO) ===================================================== */
+
 .Themes {
 
     background-color: #EAD196;
 
     margin: auto;
 }
+
+/* Contenedor con imagen de fondo */
 
 .Themes-wrapper {
 
@@ -255,6 +264,8 @@ body {
     align-items: baseline;
 
     position: relative;
+
+    /* Imagen por defecto (Noticias) */
     background-image: url(/assets/Noticias_cabecera.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -273,6 +284,7 @@ body {
     opacity: 0.5;
 }
 
+/* Texto dentro del contenedor con imagen de fondo */
 .Themes-tx {
     /* background-color: aliceblue; */
 
@@ -289,6 +301,7 @@ body {
     color: beige;
 }
 
+/* Título principal dentro del contenedor con imagen de fondo */
 .Themes-h2 {
     /* background-color: antiquewhite; */
     font-size: 3.125rem;
@@ -323,17 +336,20 @@ body {
     color: #EAD196;
 }
 
+/* Contenedor con imagen de fondo para la variante reverse */
+
 .Themes--reverse .Themes-wrapper {
     /* background-color: aliceblue; */
     align-items: end;
     background-image: url(/assets/celebracion_waterpolo.avif);
 }
-
+/* Texto dentro del contenedor con imagen de fondo para la variante reverse */
 .Themes--reverse .Themes-tx {
     align-items: end;
     text-align: end;
 }
 
+/* Contenedor con imagen de fondo para la variante challenge */
 .Themes--challenge {
     background-image: url(/assets/maria-perez-en-tokio-2326044366.jpeg);
 }
@@ -341,11 +357,13 @@ body {
 
 
 
+/* ===================================================== KEYFRAMES ===================================================== */
 
 @keyframes SwipeUp {
     from {
         transform: translateY(0%);
     }
+
     to {
         transform: translateY(-100%);
     }
@@ -355,25 +373,31 @@ body {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
     100% {
         transform: translateY(0);
     }
 }
 
 @keyframes loadingDots {
+
     0%,
     20% {
         content: "Loading";
     }
+
     40% {
         content: "Loading.";
     }
+
     60% {
         content: "Loading..";
     }
+
     80%,
     100% {
         content: "Loading...";
@@ -383,13 +407,7 @@ body {
 
 
 
-
-
-
-
-
-
-
+/* ===================================================== MEDIA QUERIES ===================================================== */
 
 @media (max-width: 588px) {
 
@@ -406,10 +424,11 @@ body {
     .Footer-ul {
         font-size: .9375rem;
     }
-    .Themes-wrapper{
-    background-size: cover ;
-    background-attachment: scroll ;
-}
+
+    .Themes-wrapper {
+        background-size: cover;
+        background-attachment: scroll;
+    }
 }
 
 @media (max-width: 400px) {
@@ -433,4 +452,3 @@ body {
         font-size: .625rem;
     }
 }
-
