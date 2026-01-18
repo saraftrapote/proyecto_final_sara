@@ -94,10 +94,10 @@ body {
 .Header {
     width: 100%;
     min-height: 6.25rem;
-    /* background-color: aqua; */
+    
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
@@ -109,6 +109,7 @@ body {
     font-size: 1.4063rem;
     background-color: transparent;
     color: #EAD196;
+    /* background-color: aqua; */
 
 
 }
@@ -195,10 +196,9 @@ body {
     flex-flow: row nowrap;
     justify-content: space-around;
 
-    padding: 1.25rem;
+    padding: .625rem;
     gap: 2.5rem;
     position: relative;
-
 
 }
 
@@ -246,10 +246,6 @@ body {
     display: none;
     width: 15rem;
     }
-
-
-
-
 
 .Header-subli {
     background-color: #ead196ce;
