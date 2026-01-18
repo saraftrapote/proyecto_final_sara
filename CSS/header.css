@@ -114,6 +114,10 @@ body {
 
 }
 
+.Header.isOpen {
+    flex-flow: column nowrap;
+}
+
 .Header-logo {
     display: flex;
     flex-flow: column nowrap;
@@ -349,8 +353,6 @@ body {
         background-color: #EAD196;
         border-radius: 2.5rem;
         color: #7c1711;
-
-        
     }
 
     .Header-ul {

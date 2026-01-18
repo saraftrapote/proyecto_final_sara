@@ -30,14 +30,18 @@ headerInt.addEventListener('mouseleave',() => {
 
 // cuando hago click en .Header-responsive
 // .Header-nav LE TOGGLE CLASS isOpen
+// .Header le TOGGLE CLASS isOpen
 
 const headerResponsive = document.querySelector('.Header-responsive')
 const headerNav = document.querySelector('.Header-nav')
+const header = document.querySelector('.Header')
 
 console.log (headerResponsive)
 console.log (headerNav)
+console.log (header)
 
 headerResponsive.addEventListener('click',() => {
     headerNav.classList.toggle('isOpen')
+    header.classList.toggle('isOpen')
     console.log('click')
 })  
